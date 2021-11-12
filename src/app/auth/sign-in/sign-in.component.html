@@ -1,0 +1,11 @@
+<form (submit)="onSignIn(signInForm)" class="custom-form" #signInForm="ngForm">
+    <div class="login">
+
+        <h1>Login</h1>
+        <input name="email" ngModel type="text" #emailInput="ngModel" [(ngModel)]="email_address" placeholder="Cedula" required />
+
+        <button type="submit">Ingresar</button>
+
+    </div>
+
+</form>

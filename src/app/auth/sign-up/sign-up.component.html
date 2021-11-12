@@ -1,0 +1,35 @@
+<div id="register">
+
+    <form id="signup" (submit)="onSignup(signupForm)" class="custom-form" #signupForm="ngForm">
+        <div class="container">
+            <h1>Registro</h1>
+            <p>Por favor complete este formulario para crear una cuenta.</p>
+            <hr>
+
+            <label for="email"><b>Nombres</b></label>
+            <input type="text" ngModel #fnameInput="ngModel" [(ngModel)]="fname" placeholder="Nombres" name="fname" id="fname" required>
+
+            <label for="email"><b>Apellidos</b></label>
+            <input type="text" ngModel #lnameInput="ngModel" [(ngModel)]="lname" placeholder="Apellidos" name="lname" id="lname" required>
+
+            <label for="email"><b>Cedula</b></label>
+            <input type="text" ngModel #cedulaInput="ngModel" [(ngModel)]="cedula" placeholder="Cedula" name="cedula" id="cedula" required>
+
+            <label for="email"><b>Correo</b></label>
+            <input type="text" ngModel #emailInput="ngModel" [(ngModel)]="email" placeholder="Correo" name="email" id="email" required>
+
+            <label for="email"><b>Celular</b></label>
+            <input type="text" ngModel #mobileNoInput="ngModel" [(ngModel)]="mobileNo" placeholder="Celular (+57 XXX XXXX XX XX)" name="mobileNo" id="mobileNo" required>
+
+
+
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container signin">
+            <p>Ya tienes una cuenta? <a href="#">Sign in</a>.</p>
+        </div>
+    </form>
+
+</div>

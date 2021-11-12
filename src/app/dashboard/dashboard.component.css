@@ -1,0 +1,40 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+}
+
+#container {
+    background-color: #cccccc;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.example-card {
+    max-width: 400px;
+    margin: 2%;
+}
+
+#logout {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+#title {
+    text-align: left;
+    display: inline-block;
+    width: 96%;
+    vertical-align: top;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
